@@ -19,7 +19,7 @@ Route::view('/', 'auth.login');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('users/profile', 'UsersController@edit')->name('users.edit-profile');
+Route::get('users/profile', 'UsersController@edit')->name('user.edit-profile');
 
 Route::get('users/profile',  [App\Http\Controllers\profileController::class, 'edit_profile'])->name('users.edit-profile');
 Route::put('users/profile', [App\Http\Controllers\profileController::class,'update_profile'])->name('users.update-profile');

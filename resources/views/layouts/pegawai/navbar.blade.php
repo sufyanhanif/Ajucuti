@@ -15,7 +15,7 @@
           <span class="nav-profile-name">{{ Auth::user()->name }}</span>
         </a>
         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-          <a class="dropdown-item" href="{{ route('user.edit-profile') }}">
+          <a class="dropdown-item" href="{{ route('users.edit-profile') }}">
             <i class="mdi mdi-settings text-primary"></i>
             Edit Profile
           </a>
